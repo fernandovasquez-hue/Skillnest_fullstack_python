@@ -39,29 +39,33 @@ lista_especial = [1, 2, ['a', 'b', 'c'], True]
 
 # Através de concatenación y multiplicación de lista, 
 # escribe la canción "Dale a tu cuerpo alegría, Macarena"
-verso1 = ['Dale', 'a', 'tu', 'cuerpo', 'alegría,', 'Macarena']
-verso2 = ['Que', 'tu', 'cuerpo', 'es', "pa'", 'darle', 'alegría', 'y', 'cosa', 'buena']
-verso3 = ['Eh,', 'Macarena', '(¡ay!)']
-coro = verso1 + verso2 + verso1 + verso3
+# verso1 = ['Dale', 'a', 'tu', 'cuerpo', 'alegría,', 'Macarena']
+# verso2 = ['Que', 'tu', 'cuerpo', 'es', "pa'", 'darle', 'alegría', 'y', 'cosa', 'buena']
+# verso3 = ['Eh,', 'Macarena', '(¡ay!)']
+# coro = verso1 + verso2 + verso1 + verso3
 
-verso4 = ['Macarena', 'tiene', 'un', 'novio', 'que', 'se', 'llama']
-verso5 = ['Que', 'se', 'llama', 'de', 'apellido', 'Vitorino']
-verso6 = ['Que', 'en', 'la', 'jura', 'de', 'bandera', 'del', 'muchacho']
-verso7 = ['Se', 'la', 'dio', 'con', 'dos', 'amigos', '(¡ay!)']
-estrofa1 = verso4 + verso5 + verso6 + verso7
+# verso4 = ['Macarena', 'tiene', 'un', 'novio', 'que', 'se', 'llama']
+# verso5 = ['Que', 'se', 'llama', 'de', 'apellido', 'Vitorino']
+# verso6 = ['Que', 'en', 'la', 'jura', 'de', 'bandera', 'del', 'muchacho']
+# verso7 = ['Se', 'la', 'dio', 'con', 'dos', 'amigos', '(¡ay!)']
+# estrofa1 = verso4 + verso5 + verso6 + verso7
 
-verso8 = ['Macarena', 'Macarena', 'Macarena']
-verso9 = ['Que', 'te', 'gustan', 'los', 'veranos', 'de', 'Marbella']
-verso10 = ['Que', 'te', 'gusta', 'la', 'movida', 'guerrilla', '(¡ay!)']
-estrofa2 = verso8 + verso9 + verso8 + verso10
+# verso8 = ['Macarena', 'Macarena', 'Macarena']
+# verso9 = ['Que', 'te', 'gustan', 'los', 'veranos', 'de', 'Marbella']
+# verso10 = ['Que', 'te', 'gusta', 'la', 'movida', 'guerrilla', '(¡ay!)']
+# estrofa2 = verso8 + verso9 + verso8 + verso10
 
-verso11 = ['Macarena', 'sueña', 'con', 'el', 'corte', 'inglés']
-verso12 = ['Y', 'se', 'compra', 'los', 'modelos', 'más', 'modernos']
-verso13 = ['Le', 'gustaría', 'vivir', 'en', 'Nueva', 'York']
-verso14 = ['y', 'ligar', 'un', 'novio', 'nuevo', '(¡ay!)']
-estrofa3 = verso11 + verso12 + verso13 + verso14
+# verso11 = ['Macarena', 'sueña', 'con', 'el', 'corte', 'inglés']
+# verso12 = ['Y', 'se', 'compra', 'los', 'modelos', 'más', 'modernos']
+# verso13 = ['Le', 'gustaría', 'vivir', 'en', 'Nueva', 'York']
+# verso14 = ['y', 'ligar', 'un', 'novio', 'nuevo', '(¡ay!)']
+# estrofa3 = verso11 + verso12 + verso13 + verso14
 
-cancionCompleta = 2*coro + 
+# cancionCompleta = 2*coro + 2*estrofa1 + 2*coro + estrofa2 + 2*coro + 2*estrofa3 + 3*coro + estrofa1 + 6*coro
+# print(cancionCompleta)
+
+
+
 # 🗂️ Acceder a los valores
 # Regresando a la analogía de la cajonera, cada cajón está numerado comenzando por el 0. Nuestro primer cajón (índice 0) tiene “pantalones”, el segundo cajón (índice 1) tiene “camisas”, y así por cada cajón. Cada cajón está representado por un número, al cual lo conocemos como índice; este sirve como dirección/posición única que apunta a cada ítem dentro del mueble. Para acceder a ellos lo haremos de la siguiente manera:
 
@@ -71,18 +75,43 @@ cancionCompleta = 2*coro +
 # print(cajonera[2]) #Accedemos al cajón con índice 2. Imprime: "calcetines"
 # cajonera[1] = "sueters" #Cambiamos el valor del cajón con índice 1
 # print(cajonera) #Imprime: ['pantalones', 'sueters', 'calcetines']
+
+
+
 # 🧰 Manipular listas
 # Como mencionamos anteriormente, las listas son dinámicas, por lo que a través de la función .append() podemos agregar elementos. Esta función agrega un nuevo elemento al final de la lista dada.
 
 # cajonera.append("vestidos") #Agregamos "vestidos" al final de la lista
 # print(cajonera) #Imprime: ['pantalones', 'sueters', 'calcetines', 'vestidos']
 # ✂️ Slicing
-# Algo de gran utilidad en Python es algo llamado Slicing o “Troceado”, que nos permite regresar una copia de parte de nuestra lista en base a índices específicos. La síntaxis utilizada es: [x:y], donde x es el índice inicial y y el índice final.
+
+# Añadir 4 elementos más a la cajonera.
+# cajonera.append("zapatos")
+# cajonera.append("poleron")
+# cajonera.append("gorro")
+# cajonera.append("reloj")
+# print(", ".join(cajonera))
+# Algo de gran utilidad en Python es algo llamado Slicing o “Troceado”, 
+# que nos permite regresar una copia de parte de nuestra lista en base 
+# a índices específicos. La síntaxis utilizada es: [x:y], 
+# donde x es el índice inicial y y el índice final.
 
 # lista_grande = [2, 4, 6, 8, 10, 12, 14, 16]
 # print(lista_grande[3:]) #Imprime:[8, 10, 12, 14, 16]
 # print(lista_grande[:6]) #Imprime:[2, 4, 6, 8, 10, 12]
 # print(lista_grande[3:6]) #Imprime:[8, 10, 12]
+
+# Ejercicio: crear una lista de numeros del 3 al 30 de 3 en 3
+# y ultilizar slicing para imprimir los siguientes rangos:
+# 1.- Entre 9 y 15 
+# 2.- superiores a 21 
+# 3.- inferiores a 18 
+# 4.- entre 15 y 27
+# lista_del_3 = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+# print(lista_del_3[2:5])
+# print(lista_del_3[6:])
+# print(lista_del_3[:6])
+# print(lista_del_3[4:9])
 # 🛠️ Funciones integradas
 # Existen múltiples funciones integradas que pueden utilizarse para secuencias todas las secuencias, incluídas tuplas y cadenas. Pero, ¿a qué nos referimos con secuencia? Piensa en una secuencia como cualquier cosa sobre la que podamos recorrer. A continuación te presentamos una función que utilizarás constantemente:
 
@@ -103,10 +132,17 @@ cancionCompleta = 2*coro +
 # frozen = ["Elsa", "Anna", "Olaf"]
 # frozen.pop() #Sintaxis: nombre_lista.funcion()
 # print(frozen) #Imprime: ['Elsa', 'Anna']
-# Algunos métodos comunes para las listas son:
 
+
+# Algunos métodos comunes para las listas son:
+listaSeries = ['One piece', 'Given', 'Slam Dunk', 'Chavo del 8', 'The Bigbang Theory', 'The Simpsons', 'Soy Luna']
 # list.append(valor): añade un valor al final de la lista.
+print(listaSeries.append('Pokemon'))
 # list.pop(índice): elimina un valor en la posición dada. Si no se pasa ningún parámetro, se eliminará el último valor en la lista.
+print(listaSeries.pop(2))
 # list.index(valor): devuelve el índice (posición) del valor dado si existe en la lista y genera un error si no existe.
+print(listaSeries.index('Given'))
 # list.reverse(): invierte el orden de los elementos, en su lugar.*
+print(listaSeries.reverse())
 # list.sort(): ordena los elementos de menor a mayor, o alfabéticamente para cadenas.
+print(listaSeries.sort())
